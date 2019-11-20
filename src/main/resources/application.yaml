@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: local
+  banner:
+    location: banner.txt
+
+# Default server port
+server:
+  port: 8080
+
+# Default management port
+management:
+  server:
+    port: 8081
+
+scheduling:
+  fixedDelayInMilliseconds: 1000
