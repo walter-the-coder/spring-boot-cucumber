@@ -13,6 +13,7 @@ class Scheduler(val myEventPublisher: MyEventPublisher) {
             "Hello"
         } else {
             "Howdy"
-        }myEventPublisher.publishEvent(randomText)
+        }
+        myEventPublisher.publishEvent(randomText)
     }
 }
