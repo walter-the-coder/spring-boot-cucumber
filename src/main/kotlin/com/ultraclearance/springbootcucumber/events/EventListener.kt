@@ -11,6 +11,6 @@ class EventHandler {
 
     @EventListener(condition = "#myCustomEvent.isHowdy()")
     fun handleEvent(myCustomEvent: MyCustomEvent) {
-        LOGGER.info(myCustomEvent.message)
+        LOGGER.info("EventHandler picked up ${myCustomEvent.message}")
     }
 }
