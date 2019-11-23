@@ -2,3 +2,6 @@
 spring:
   main:
     allow-bean-definition-overriding: true
+
+scheduling:
+  fixedDelayInMilliseconds: 100

@@ -4,7 +4,7 @@ import org.springframework.context.ApplicationEventPublisher
 import org.springframework.stereotype.Component
 
 @Component
-class MyEventPublisher(var applicationEventPublisher: ApplicationEventPublisher) {
+class EventPublisher(var applicationEventPublisher: ApplicationEventPublisher) {
 
     fun publishEvent(message: String) {
         applicationEventPublisher.publishEvent(

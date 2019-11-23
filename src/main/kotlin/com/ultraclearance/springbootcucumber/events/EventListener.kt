@@ -1,10 +1,10 @@
 package com.ultraclearance.springbootcucumber.events
 
-import org.slf4j.LoggerFactory
+import mu.KotlinLogging
 import org.springframework.context.event.EventListener
 import org.springframework.stereotype.Component
 
-private var LOGGER = LoggerFactory.getLogger(EventListener::class.java)
+private val LOGGER = KotlinLogging.logger {}
 
 @Component
 class EventListener {

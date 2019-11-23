@@ -1,16 +1,13 @@
-package feature
+package features
 
 import com.ultraclearance.springbootcucumber.SpringBootCucumberApplication
-import com.ultraclearance.springbootcucumber.events.MyEventPublisher
 import io.cucumber.java.Before
-import org.slf4j.LoggerFactory
-import org.springframework.beans.factory.annotation.Autowired
+import mu.KotlinLogging
 import org.springframework.boot.test.context.SpringBootTest
-import org.springframework.test.annotation.DirtiesContext
 import org.springframework.test.context.ActiveProfiles
 import org.springframework.test.context.ContextConfiguration
 
-private var LOGGER = LoggerFactory.getLogger(SpringSetup::class.java)
+private val LOGGER = KotlinLogging.logger {}
 
 @ActiveProfiles("test")
 @SpringBootTest(
@@ -18,11 +15,7 @@ private var LOGGER = LoggerFactory.getLogger(SpringSetup::class.java)
         webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT
 )
 @ContextConfiguration(classes = [TestConfig::class])
-@DirtiesContext(methodMode = DirtiesContext.MethodMode.BEFORE_METHOD)
 class SpringSetup {
-
-    @Autowired
-    private lateinit var myEventPublisher: MyEventPublisher
 
     @Before
     fun setup() {

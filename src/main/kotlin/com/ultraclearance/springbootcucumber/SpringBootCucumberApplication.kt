@@ -9,5 +9,5 @@ import org.springframework.scheduling.annotation.EnableScheduling
 class SpringBootCucumberApplication
 
 fun main(args: Array<String>) {
-	runApplication<SpringBootCucumberApplication>(*args)
+    runApplication<SpringBootCucumberApplication>(*args)
 }

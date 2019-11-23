@@ -1,4 +1,4 @@
-package feature
+package features
 
 import io.cucumber.junit.Cucumber
 import io.cucumber.junit.CucumberOptions
@@ -7,9 +7,9 @@ import org.junit.runner.RunWith
 @RunWith(Cucumber::class)
 @CucumberOptions(
         strict = true,
-        glue = ["feature"],
+        glue = ["features"],
         stepNotifications = true,
-        features = ["src/test/resources/feature"],
+        features = ["src/test/resources/features"],
         plugin = ["pretty"]
 )
 class RunCucumberTest
