@@ -7,7 +7,7 @@ import mu.KotlinLogging
 
 private val LOGGER = KotlinLogging.logger {}
 
-class EventListenerVerificationStepDefs : En {
+class EventStepDefs : En {
 
     init {
         When("an event with message {string} is published") { message: String ->
